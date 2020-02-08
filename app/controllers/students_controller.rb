@@ -18,6 +18,7 @@ class StudentsController < ApplicationController
     else
       @student.active = true
     end
+    redirect_to student_path
   end
 
     def set_student
